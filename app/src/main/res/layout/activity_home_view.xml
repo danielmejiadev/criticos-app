@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.criticos.views.HomeView">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarHome"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <com.android.criticos.app.DelayAutoCompleteTextView
+                android:id="@+id/delayEditText"
+                android:inputType="textCapSentences"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:imeOptions="flagNoExtractUi|actionSearch"
+                android:textSize="18dp"
+                android:textIsSelectable="false"
+                android:hint="Buscar evento"
+                android:textColor="#040404"
+                android:dropDownWidth="match_parent"/>
+
+
+                <ImageButton
+                    android:id="@+id/pastePin"
+                    android:layout_marginLeft="-40dp"
+                    style="?android:buttonBarButtonStyle"
+                    android:src="@drawable/ic_search_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <Button
+        android:text="Eventos como actor"
+        android:layout_height="150dp"
+        android:id="@+id/button3"
+        android:textSize="16sp"
+        android:layout_width="150dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="47dp"
+        android:layout_marginEnd="47dp"
+        android:onClick="clickShowEventListLikeActor" />
+
+    <Button
+        android:text="Mis eventos "
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/button6"
+        android:textSize="16sp"
+        android:onClick="clickShowEventListLikeCreator"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_marginBottom="143dp" />
+
+    <Button
+        android:text="Crear Evento"
+        android:id="@+id/button4"
+        android:textSize="16sp"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        style="@style/Widget.AppCompat.Button"
+        android:onClick="clickGoToCreateEvent"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

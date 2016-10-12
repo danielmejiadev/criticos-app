@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@drawable/ic_event"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eventNameTextRow"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/eventDescriptionTextRow"
+        android:layout_alignStart="@+id/eventDescriptionTextRow" />
+
+    <TextView
+        android:id="@+id/eventDescriptionTextRow"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_below="@id/eventNameTextRow"
+        android:textColor="#343434"
+        android:textSize="14dip"
+        android:layout_gravity="top"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there"
+         />
+
+    <TextView
+        android:id="@+id/eventDateTextRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Fecha"
+        android:layout_marginRight="47dp"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/eventDescriptionTextRow"
+        android:layout_alignEnd="@+id/eventDescriptionTextRow"
+        android:layout_marginEnd="47dp" />
+
+</RelativeLayout>

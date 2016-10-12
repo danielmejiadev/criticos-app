@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.user.SignInUserView">
+
+
+    <TextView
+        android:text="Regístrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/userNameText"
+        android:hint="* Nombre (s)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:id="@+id/userLastNameText"
+        android:layout_marginTop="15dp"
+        android:hint="  Apellido (s)"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:id="@+id/userOccupationText"
+        android:layout_marginTop="15dp"
+        android:hint="Ocupación"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:id="@+id/userEmailText"
+        android:layout_marginTop="15dp"
+        android:hint="* Correo electrónico" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/userPasswordText"
+        android:hint="* Contraseña" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="15"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/userPassword2Text"
+        android:hint="* Repetir contraseña" />
+
+    <Button
+        android:text="Registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerButton"
+        android:layout_marginTop="15dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="clickSignInUserButton"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Obligatorio"
+        android:id="@+id/textRequire"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+
+
+
+</LinearLayout>

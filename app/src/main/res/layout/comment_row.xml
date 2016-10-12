@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="3dip"
+        >
+
+        <ImageView
+            android:id="@+id/imageComment"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:src="@drawable/ic_comment"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Comentario"
+                android:textSize="16dp"
+                android:maxLines="2"
+                android:lines="2"
+                android:id="@+id/eventComment"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:inputType="textFilter|textNoSuggestions"
+                android:focusableInTouchMode="false"
+                android:gravity="bottom"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:weightSum="1"
+            android:layout_gravity="left">
+
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:src="@drawable/ic_event" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:padding="2dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14dp"
+                android:gravity="start"
+                android:id="@+id/eventDateComment" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

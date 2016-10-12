@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.criticos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    ﻿
+    <application
+        android:name=".app.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".views.user.LoginView"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.HomeView"
+            android:label="Inicio"
+            android:theme="@style/AppThemeNotToolbar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".views.user.SignInUserView"
+            android:label=""
+            android:parentActivityName=".views.user.LoginView"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".views.user.UserProfileView"
+            android:label="Perfil de usuario"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".views.event.CreateEventView"
+            android:label="Buscar actor"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".views.event.DetailEventView"
+            android:label=""
+            android:windowSoftInputMode="adjustPan"
+            android:parentActivityName=".views.HomeView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.criticos.views.HomeView" />
+        </activity>
+    </application>
+
+</manifest>
